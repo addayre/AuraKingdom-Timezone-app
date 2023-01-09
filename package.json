@@ -1,0 +1,19 @@
+{
+  "name": "my-auratimezone-app",
+  "version": "1.0.0",
+  "description": "adapt the Brazilian time zone to the game's time zone.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addayre/AuraKingdom-AdaptTimeZone.git"
+  },
+  "author": "Adrian L. Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addayre/AuraKingdom-AdaptTimeZone/issues"
+  },
+  "homepage": "https://github.com/addayre/AuraKingdom-AdaptTimeZone#readme"
+}
