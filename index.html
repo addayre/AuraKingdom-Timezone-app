@@ -13,15 +13,27 @@
     <header>
         <div class="header-container">
             <img src="./src/imgs/aurakingdom_logo.png" alt="aurakingdom_logo" class="AK-logo">
-            <h2>Conversor de fuso horário</h2>
+            <h1>Conversor de fuso horário</h1>
         </div>
     </header>
     <section>
-        <input type="text" id="day">
-        <input type="time" id="hour">
-        <button id="button">Converter</button>
+        <div class="main-content">
+            <input type="text" placeholder="Digite um dia da semana" id="day">
+            <input type="time" id="hour">
+        </div>
+        <div class="button">
+            <button id="button">Converter</button>
+        </div>
     </section>
-
+    <footer>
+        <h4>instruções: <br>
+            Digite um dia da semana no bloco em branco, <br> por exemplo: Segunda, Terça, Quarta, Quinta, Sexta, Sabádo
+            e Domingo. <br> Em seguida, escolha um horário que deseja converter para (GMT+1) horário do jogo. <br>
+            OBS: Apenas horário exatos. Exemplo: 03:00, 09:00, 15:00, 22:00. <br>
+            Feito isso, mostrarei na tela para você, o Dia e Horário convertido.
+        </h4>
+        <p>Developed by Adrian L. Silva</p>
+    </footer>
 
     <script src="./aurakingdom-app.js"></script>
 </body>

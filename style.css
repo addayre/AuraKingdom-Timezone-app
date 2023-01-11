@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Raleway:wght@200&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image:url(./src/imgs/background.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(5px) brightness(60%);
+    overflow: hidden;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cutive Mono', monospace;
+    color: white;
+    text-shadow: 0 0 2px white, 0 0 10px red;
+    position: relative;
+    top: 5vh;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 12vh;
+}
+#day {
+    border-radius: 8px;
+    box-shadow: 0 0 10px white, 0 0 20px lightblue;
+    border-style: none;
+    padding: 8px 15px;
+}
+#hour {
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 10px white, 0 0 20px lightblue;
+    border-style: none;
+    padding: 8px 15px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 18vh;
+}
+#button {
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 8px 15px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 0 10px white, 0 0 50px lightblue;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+#button:hover {
+    color: blue;
+    background-color: white;
+}
+footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: darkturquoise;
+    font-size: 13px;
+    position: relative;
+    top: 22vh;
+    text-shadow: 0.5px 0.5px 0.5vh black;
+} 
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 9px;
+    position: relative;
+    top: 30vh;
+}
