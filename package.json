@@ -4,6 +4,7 @@
   "description": "adapt the Brazilian time zone to the game's time zone.",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/addayre/AuraKingdom-AdaptTimeZone/issues"
   },
-  "homepage": "https://github.com/addayre/AuraKingdom-AdaptTimeZone#readme"
+  "homepage": "https://github.com/addayre/AuraKingdom-AdaptTimeZone#readme",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
 }
