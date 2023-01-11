@@ -10,17 +10,28 @@
 
 Ao digitar `npm start` no terminal, vai abrir a aplicação:
 
-![image](https://user-images.githubusercontent.com/102830485/211817857-d7f5805f-b760-4b7e-ac71-791ee28a7461.png)
+>![image](https://user-images.githubusercontent.com/102830485/211883011-1d9ec77c-d941-4362-9da9-1f2ed66f3283.png)
 
 </br>
 
-Preenchendo com nosso fuso horário, por exemplo: `Sexta e 22:00hrs`,
+Ao selecionar, por exemplo: `Sexta e 22:00hrs`,
 
-![image](https://user-images.githubusercontent.com/102830485/211821621-9d4ed68b-dee5-48db-a6b2-0fc87e4a075c.png)
+>![image](https://user-images.githubusercontent.com/102830485/211882811-6c8a8ea7-348d-4824-8ae1-37080eb46bb5.png)
 
 A aplicação devolverá esse horário convertido no fuso (GMT+1). Onde o horário do jogo se encontra.
 
-![image](https://user-images.githubusercontent.com/102830485/211818913-4881a159-e26d-45bd-a4db-127ebc79f665.png)
+>![image](https://user-images.githubusercontent.com/102830485/211882923-2d98af0c-5337-43b4-9503-8bd2d0ea8cdc.png)
+
+# Erros
+
+Caso o usuário **não** escolha nenhuma **data**, aparecerá esse erro:
+
+>![image](https://user-images.githubusercontent.com/102830485/211883241-79eb10d6-1cb8-43f1-8694-9d93d90567ad.png)
+
+Seguindo essa linha, caso o usuário **não** escolha um **horário**, também aparecerá um erro:
+
+>![image](https://user-images.githubusercontent.com/102830485/211883440-2466cdbf-3a28-4181-8725-597cff1bf947.png)
+
 
 
 
