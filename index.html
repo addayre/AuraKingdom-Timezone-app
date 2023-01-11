@@ -18,18 +18,32 @@
     </header>
     <section>
         <div class="main-content">
-            <input type="text" placeholder="Digite um dia da semana" id="day">
-            <input type="time" id="hour">
+            <!-- <input type="text" placeholder="Digite um dia da semana" id="day"> -->
+            <select id="select" name="select">
+                <option value="" selected disabled hidden>Selecione um dia</option>
+                <option value="Segunda-feira">Segunda-feira</option>
+                <option value="Terça-feira">Terça-feira</option>
+                <option value="Quarta-feira">Quarta-feira</option>
+                <option value="Quinta-feira">Quinta-feira</option>
+                <option value="Sexta-feira">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <input type="time" id="hour" max="23:00">
         </div>
         <div class="button">
             <button id="button">Converter</button>
         </div>
     </section>
     <footer>
-        <h4>instruções: <br>
-            Digite um dia da semana no bloco em branco, por exemplo: <br> Segunda, Terça, Quarta, Quinta, Sexta, Sabádo
-            e Domingo. <br> Em seguida, escolha um horário que deseja converter para (GMT+1) horário do jogo. <br>
-            OBS: Apenas horários exatos. Exemplo: 03:00, 09:00, 15:00, 22:00. <br>
+        <h4>instruções:
+            <br>
+            Selecione um dia da semana e em seguida,
+            <br>
+            escolha um horário que deseja converter para (GMT+1) horário do jogo.
+            <br>
+            OBS: Só é permitido horários exatos. Exemplo: 03:00, 09:00, 15:00, 21:00.
+            <br>
             Feito isso, mostrarei na tela para você, o Dia e Horário convertido.
         </h4>
         <p>Developed by Adrian L. Silva</p>

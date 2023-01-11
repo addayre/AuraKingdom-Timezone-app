@@ -1,16 +1,22 @@
+//força usuario a escolher o minuto :00 (ZERO)
 const timeInput = document.getElementById('hour');
     timeInput.addEventListener('input', (e) => {
         let hour = e.target.value.split(':')[0]
         e.target.value = `${hour}:00`
     })
 
+//ativamento da função ao clikar no botão 'converter'
 button.addEventListener('click', () => {
-    const dayWeek = document.getElementById("day").value;
-
+    //recebe o valor do input txt
+    let select = document.querySelector('#select').value
+    //recebe o valor do input time
     let hours = document.getElementById("hour").value;
+    //tranforma o valor string em um número flutuante (decimal)
     let hour = parseFloat(hours);
     
-    if (dayWeek === 'Segunda' && hours === '20:00' || dayWeek === 'segunda' && hours === '20:00') {
+    //condicional para cada dia da semana. Verifica se o dia e a hora corresponde a escolha feita pelo usuário,
+    //caso corresponder, calcula o fuso horário [(GMT+1) + 4 horas comparado com o nosso] e é feita a apresentação dos valores na tela.
+    if (select === 'Segunda-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
@@ -20,7 +26,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am - Meia-noite
         `)
     
-    } else if (dayWeek === 'Segunda' && hours >= '21:00' || dayWeek === 'segunda' && hours >= '21:00') {
+    } else if (select === 'Segunda-feira' && hours >= '21:00') {
     
         hour -= 20
         alert(`
@@ -29,7 +35,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Segunda' && hours === '00:00' || dayWeek === 'segunda' && hours === '00:00') {
+    } else if (select === 'Segunda-feira' && hours === '00:00') {
     
         hour += 4
         alert(`
@@ -38,7 +44,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Segunda' && hours > '00:00' && hours < '08:00' || dayWeek === 'segunda' && hours > '00:00' && hours < '08:00') {  
+    } else if (select === 'Segunda-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
         alert(`
@@ -47,7 +53,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Segunda' && hours === '08:00' || dayWeek === 'segunda' && hours === '08:00') {
+    } else if (select === 'Segunda-feira' && hours === '08:00') {
     
         hour += 4
         alert(`
@@ -56,7 +62,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm - Meio-dia
         `)
     
-    } else if (dayWeek === 'Segunda' && hours > '08:00' && hours < '20:00' || dayWeek === 'segunda' && hours > '08:00' && hours < '20:00') {
+    } else if (select === 'Segunda-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
@@ -66,7 +72,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm
         `)
         
-    } else if (dayWeek === 'Terça' && hours === '20:00' || dayWeek === 'terça' && hours === '20:00') {
+    } else if (select === 'Terça-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
@@ -76,7 +82,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am - Meia-noite
         `)
     
-    } else if (dayWeek === 'Terça' && hours >= '21:00' || dayWeek === 'terça' && hours >= '21:00') {
+    } else if (select === 'Terça-feira' && hours >= '21:00') {
     
         hour -= 20
         alert(`
@@ -85,7 +91,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Terça' && hours === '00:00' || dayWeek === 'terça' && hours === '00:00') {
+    } else if (select === 'Terça-feira' && hours === '00:00') {
     
         hour += 4
         alert(`
@@ -94,7 +100,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Terça' && hours > '00:00' && hours < '08:00' || dayWeek === 'terça' && hours > '00:00' && hours < '08:00') {  
+    } else if (select === 'Terça-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
         alert(`
@@ -103,7 +109,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Terça' && hours === '08:00' || dayWeek === 'terça' && hours === '08:00') {
+    } else if (select === 'Terça-feira' && hours === '08:00') {
     
         hour += 4
         alert(`
@@ -112,7 +118,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm - Meio-dia
         `)
     
-    } else if (dayWeek === 'Terça' && hours > '08:00' && hours < '20:00' || dayWeek === 'terça' && hours > '08:00' && hours < '20:00') {
+    } else if (select === 'Terça-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
@@ -122,7 +128,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm
         `)
         
-    } else if (dayWeek === 'Quarta' && hours === '20:00' || dayWeek === 'quarta' && hours === '20:00') {
+    } else if (select === 'Quarta-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
@@ -132,7 +138,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am - Meia-noite
         `)
     
-    } else if (dayWeek === 'Quarta' && hours >= '21:00' || dayWeek === 'quarta' && hours >= '21:00') {
+    } else if (select === 'Quarta-feira' && hours >= '21:00') {
     
         hour -= 20
         alert(`
@@ -141,7 +147,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Quarta' && hours === '00:00' || dayWeek === 'quarta' && hours === '00:00') {
+    } else if (select === 'Quarta-feira' && hours === '00:00') {
     
         hour += 4
         alert(`
@@ -150,7 +156,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Quarta' && hours > '00:00' && hours < '08:00' || dayWeek === 'quarta' && hours > '00:00' && hours < '08:00') {  
+    } else if (select === 'Quarta-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
         alert(`
@@ -159,7 +165,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Quarta' && hours === '08:00' || dayWeek === 'quarta' && hours === '08:00') {
+    } else if (select === 'Quarta-feira' && hours === '08:00') {
     
         hour += 4
         alert(`
@@ -168,7 +174,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm - Meio-dia
         `)
     
-    } else if (dayWeek === 'Quarta' && hours > '08:00' && hours < '20:00' || dayWeek === 'quarta' && hours > '08:00' && hours < '20:00') {
+    } else if (select === 'Quarta-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
@@ -178,7 +184,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm
         `)
         
-    } else if (dayWeek === 'Quinta' && hours === '20:00' || dayWeek === 'quinta' && hours === '20:00') {
+    } else if (select === 'Quinta-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
@@ -188,7 +194,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am - Meia-noite
         `)
     
-    } else if (dayWeek === 'Quinta' && hours >= '21:00' || dayWeek === 'quinta' && hours >= '21:00') {
+    } else if (select === 'Quinta-feira' && hours >= '21:00') {
     
         hour -= 20
         alert(`
@@ -197,7 +203,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Quinta' && hours === '00:00' || dayWeek === 'quinta' && hours === '00:00') {
+    } else if (select === 'Quinta-feira' && hours === '00:00') {
     
         hour += 4
         alert(`
@@ -206,7 +212,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Quinta' && hours > '00:00' && hours < '08:00' || dayWeek === 'quinta' && hours > '00:00' && hours < '08:00') {  
+    } else if (select === 'Quinta-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
         alert(`
@@ -215,7 +221,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Quinta' && hours === '08:00' || dayWeek === 'quinta' && hours === '08:00') {
+    } else if (select === 'Quinta-feira' && hours === '08:00') {
     
         hour += 4
         alert(`
@@ -224,7 +230,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm - Meio-dia
         `)
     
-    } else if (dayWeek === 'Quinta' && hours > '08:00' && hours < '20:00' || dayWeek === 'quinta' && hours > '08:00' && hours < '20:00') {
+    } else if (select === 'Quinta-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
@@ -234,7 +240,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm
         `)
         
-    } else if (dayWeek === 'Sexta' && hours === '20:00' || dayWeek === 'sexta' && hours === '20:00') {
+    } else if (select === 'Sexta-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
@@ -244,7 +250,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am - Meia-noite
         `)
     
-    } else if (dayWeek === 'Sexta' && hours >= '21:00' || dayWeek === 'sexta' && hours >= '21:00') {
+    } else if (select === 'Sexta-feira' && hours >= '21:00') {
     
         hour -= 20
         alert(`
@@ -253,7 +259,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Sexta' && hours === '00:00' || dayWeek === 'sexta' && hours === '00:00') {
+    } else if (select === 'Sexta-feira' && hours === '00:00') {
     
         hour += 4
         alert(`
@@ -262,7 +268,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Sexta' && hours > '00:00' && hours < '08:00' || dayWeek === 'sexta' && hours > '00:00' && hours < '08:00') {  
+    } else if (select === 'Sexta-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
         alert(`
@@ -271,7 +277,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Sexta' && hours === '08:00' || dayWeek === 'sexta' && hours === '08:00') {
+    } else if (select === 'Sexta-feira' && hours === '08:00') {
     
         hour += 4
         alert(`
@@ -280,7 +286,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm - Meio-dia
         `)
     
-    } else if (dayWeek === 'Sexta' && hours > '08:00' && hours < '20:00' || dayWeek === 'sexta' && hours > '08:00' && hours < '20:00') {
+    } else if (select === 'Sexta-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
@@ -290,7 +296,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm
         `)
         
-    } else if (dayWeek === 'Sábado' && hours === '20:00' || dayWeek === 'Sabado' && hours === '20:00' || dayWeek === 'sábado' && hours === '20:00' || dayWeek === 'sabado' && hours === '20:00') {
+    } else if (select === 'Sábado' && hours === '20:00') {
     
         hour -= 20
         hour += 12
@@ -300,7 +306,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am - Meia-noite
         `)
     
-    } else if (dayWeek === 'Sábado' && hours >= '21:00' || dayWeek === 'Sabado' && hours >= '21:00' || dayWeek === 'sábado' && hours >= '21:00' || dayWeek === 'sabado' && hours >= '21:00') {
+    } else if (select === 'Sábado' && hours >= '21:00') {
     
         hour -= 20
         alert(`
@@ -309,7 +315,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Sábado' && hours === '00:00' || dayWeek === 'Sabado' && hours === '00:00' || dayWeek === 'sábado' && hours === '00:00' || dayWeek === 'sabado' && hours === '00:00') {
+    } else if (select === 'Sábado' && hours === '00:00') {
     
         hour += 4
         alert(`
@@ -318,7 +324,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Sábado' && hours < '08:00' || dayWeek === 'Sabado' && hours < '08:00' || dayWeek === 'sábado' && hours < '08:00' || dayWeek === 'sabado' && hours < '08:00') {  
+    } else if (select === 'Sábado' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
         alert(`
@@ -327,7 +333,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Sábado' && hours === '08:00' || dayWeek === 'Sabado' && hours === '08:00' || dayWeek === 'sábado' && hours === '08:00' || dayWeek === 'sabado' && hours === '08:00') {
+    } else if (select === 'Sábado' && hours === '08:00') {
     
         hour += 4
         alert(`
@@ -336,7 +342,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm - Meio-dia
         `)
     
-    } else if (dayWeek === 'Sábado' && hours < '20:00' || dayWeek === 'Sabado' && hours < '20:00' || dayWeek === 'sábado' && hours < '20:00' || dayWeek === 'sabado' && hours < '20:00') {
+    } else if (select === 'Sábado' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
@@ -345,8 +351,8 @@ button.addEventListener('click', () => {
         Dia: Sábado
         Horário: ${hour}:00pm
         `)
-        
-    } else if (dayWeek === 'Domingo' && hours === '20:00' || dayWeek === 'domingo' && hours === '20:00') {
+
+    } else if (select === 'Domingo' && hours === '20:00') {
     
         hour -= 20
         hour += 12
@@ -356,7 +362,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am - Meia-noite
         `)
     
-    } else if (dayWeek === 'Domingo' && hours >= '21:00' || dayWeek === 'domingo' && hours >= '21:00') {
+    } else if (select === 'Domingo' && hours >= '21:00') {
     
         hour -= 20
         alert(`
@@ -365,7 +371,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Domingo' && hours === '00:00' || dayWeek === 'domingo' && hours === '00:00') {
+    } else if (select === 'Domingo' && hours === '00:00') {
     
         hour += 4
         alert(`
@@ -374,7 +380,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Domingo' && hours > '00:00' && hours < '08:00' || dayWeek === 'domingo' && hours > '00:00' && hours < '08:00') {  
+    } else if (select === 'Domingo' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
         alert(`
@@ -383,7 +389,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00am
         `)
     
-    } else if (dayWeek === 'Domingo' && hours === '08:00' || dayWeek === 'domingo' && hours === '08:00') {
+    } else if (select === 'Domingo' && hours === '08:00') {
     
         hour += 4
         alert(`
@@ -392,7 +398,7 @@ button.addEventListener('click', () => {
         Horário: ${hour}:00pm - Meio-dia
         `)
     
-    } else if (dayWeek === 'Domingo' && hours > '08:00' && hours < '20:00' || dayWeek === 'domingo' && hours > '08:00' && hours < '20:00') {
+    } else if (select === 'Domingo' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
@@ -401,7 +407,12 @@ button.addEventListener('click', () => {
         Dia: Domingo
         Horário: ${hour}:00pm
         `)
+
+    //caso o usuário não escolha nenhum dia, aparecerá esse erro:
+    } else if (select === '') {
+        alert('Por favor escolha uma data!')
+    //caso o usuário não escolha um horário, aparecerá esse erro:
     } else {
-        alert('Por favor inserir um dia e uma data válida!')
+        alert('Por favor escolha um horário!')
     }
 })    

@@ -30,14 +30,14 @@ body {
     position: relative;
     top: 12vh;
 }
-#day {
+#select {
+    font-family: 'DM Sans', sans-serif;
     border-radius: 8px;
     box-shadow: 0 0 10px white, 0 0 20px lightblue;
     border-style: none;
     padding: 8px 15px;
 }
 #hour {
-    cursor: pointer;
     border-radius: 8px;
     box-shadow: 0 0 10px white, 0 0 20px lightblue;
     border-style: none;
@@ -76,7 +76,7 @@ footer h4 {
     color: lightblue;
     font-size: 14px;
     position: relative;
-    top: 22vh;
+    top: 26vh;
     text-shadow: 0.5px 0.5px 0.5vh black;
 } 
 footer p {
@@ -87,5 +87,5 @@ footer p {
     color: white;
     font-size: 9px;
     position: relative;
-    top: 30vh;
+    top: 33vh;
 }
