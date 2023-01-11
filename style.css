@@ -12,6 +12,7 @@ body {
     background-size: cover;
     backdrop-filter: blur(5px) brightness(60%);
     overflow: hidden;
+    -webkit-app-region: drag;
 }
 .header-container {
     display: flex;
@@ -29,8 +30,10 @@ body {
     gap: 10px;
     position: relative;
     top: 12vh;
+    -webkit-app-region: no-drag;
 }
 #select {
+    cursor: pointer;
     font-family: 'DM Sans', sans-serif;
     border-radius: 8px;
     box-shadow: 0 0 10px white, 0 0 20px lightblue;
@@ -38,10 +41,14 @@ body {
     padding: 8px 15px;
 }
 #hour {
+    cursor: pointer;
     border-radius: 8px;
     box-shadow: 0 0 10px white, 0 0 20px lightblue;
     border-style: none;
     padding: 8px 15px;
+}
+button {
+    -webkit-app-region: no-drag;
 }
 .button {
     display: flex;
