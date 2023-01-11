@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/addayre/AuraKingdom-Timezone-app.git/issues"
   },
-  "homepage": "https://github.com/addayre/AuraKingdom-Timezone-app.git#readme",
+  "homepage": "https://github.com/addayre/AuraKingdom-AdaptTimeZone#readme",
   "devDependencies": {
     "electron": "^22.0.1"
   }
