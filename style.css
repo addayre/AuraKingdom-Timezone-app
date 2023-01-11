@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=DM+Sans&family=Quicksand:wght@300&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -51,7 +51,7 @@ body {
 }
 #button {
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: white;
     border-radius: 10px;
     font-size: 22px;
@@ -71,9 +71,10 @@ footer h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: darkturquoise;
-    font-size: 13px;
+    line-height: 3.5vh;
+    font-family: 'Quicksand', sans-serif;
+    color: lightblue;
+    font-size: 14px;
     position: relative;
     top: 22vh;
     text-shadow: 0.5px 0.5px 0.5vh black;
@@ -82,7 +83,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 9px;
     position: relative;
