@@ -5,7 +5,7 @@ const createWindow = () => {
       //largura da janela.
       width: 800,
       height: 600,
-      //esconde a barra de opções.
+      //esconde a barra superior de opções.
       titleBarStyle: 'hidden',
       //configura os botões do canto superior direito da aplicação.
       titleBarOverlay: {
