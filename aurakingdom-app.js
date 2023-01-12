@@ -20,399 +20,232 @@ button.addEventListener('click', () => {
     
         hour -= 20
         hour += 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Terça-feira
-        Horário: ${hour}:00am - Meia-noite
-        `)
+        //retorna o resultado para o HTML, desse modo, exibindo para o usuário
+        document.querySelector('#return').innerHTML = "Dia: Terça-feira" + "<br>" +  "Horário: " + hour + ":00am — Meia-noite"
     
     } else if (select === 'Segunda-feira' && hours >= '21:00') {
     
         hour -= 20
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Terça-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Terça-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Segunda-feira' && hours === '00:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Terça-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Terça-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Segunda-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Segunda-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Segunda-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Segunda-feira' && hours === '08:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Segunda-feira
-        Horário: ${hour}:00pm - Meio-dia
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Segunda-feira" + "<br>" +  "Horário: " + hour + ":00pm — Meio-dia"
     
     } else if (select === 'Segunda-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Segunda-feira
-        Horário: ${hour}:00pm
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Segunda-feira" + "<br>" +  "Horário: " + hour + ":00pm"
         
     } else if (select === 'Terça-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quarta-feira
-        Horário: ${hour}:00am - Meia-noite
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quarta-feira" + "<br>" +  "Horário: " + hour + ":00am — Meia-noite "
     
     } else if (select === 'Terça-feira' && hours >= '21:00') {
     
         hour -= 20
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quarta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quarta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Terça-feira' && hours === '00:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quarta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quarta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Terça-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Terça-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Terça-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Terça-feira' && hours === '08:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Terça-feira
-        Horário: ${hour}:00pm - Meio-dia
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Terça-feira" + "<br>" +  "Horário: " + hour + ":00pm — Meio-dia"
     
     } else if (select === 'Terça-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Terça-feira
-        Horário: ${hour}:00pm
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Terça-feira" + "<br>" +  "Horário: " + hour + ":00pm"
         
     } else if (select === 'Quarta-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quinta-feira
-        Horário: ${hour}:00am - Meia-noite
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quinta-feira" + "<br>" +  "Horário: " + hour + ":00am — Meia-noite"
     
     } else if (select === 'Quarta-feira' && hours >= '21:00') {
     
         hour -= 20
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quinta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quinta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Quarta-feira' && hours === '00:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quinta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quinta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Quarta-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quarta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quarta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Quarta-feira' && hours === '08:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quarta-feira
-        Horário: ${hour}:00pm - Meio-dia
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quarta-feira" + "<br>" +  "Horário: " + hour + ":00pm — Meio-dia"
     
     } else if (select === 'Quarta-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quarta-feira
-        Horário: ${hour}:00pm
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quarta-feira" + "<br>" +  "Horário: " + hour + ":00pm"
         
     } else if (select === 'Quinta-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sexta-feira
-        Horário: ${hour}:00am - Meia-noite
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sexta-feira" + "<br>" +  "Horário: " + hour + ":00am — Meia-noite"
     
     } else if (select === 'Quinta-feira' && hours >= '21:00') {
     
         hour -= 20
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sexta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sexta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Quinta-feira' && hours === '00:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sexta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sexta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Quinta-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quinta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quinta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Quinta-feira' && hours === '08:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quinta-feira
-        Horário: ${hour}:00pm - Meio-dia
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quinta-feira" + "<br>" +  "Horário: " + hour + ":00pm — Meio-dia"
     
     } else if (select === 'Quinta-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Quinta-feira
-        Horário: ${hour}:00pm
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Quinta-feira" + "<br>" +  "Horário: " + hour + ":00pm"
         
     } else if (select === 'Sexta-feira' && hours === '20:00') {
     
         hour -= 20
         hour += 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sábado
-        Horário: ${hour}:00am - Meia-noite
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sábado" + "<br>" +  "Horário: " + hour + ":00am — Meia-noite"
     
     } else if (select === 'Sexta-feira' && hours >= '21:00') {
     
         hour -= 20
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sábado
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sábado" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Sexta-feira' && hours === '00:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sábado
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sábado" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Sexta-feira' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sexta-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sexta-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Sexta-feira' && hours === '08:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sexta-feira
-        Horário: ${hour}:00pm - Meio-dia
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sexta-feira" + "<br>" +  "Horário: " + hour + ":00pm — Meio-dia"
     
     } else if (select === 'Sexta-feira' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sexta-feira
-        Horário: ${hour}:00pm
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sexta-feira" + "<br>" +  "Horário: " + hour + ":00pm"
         
     } else if (select === 'Sábado' && hours === '20:00') {
     
         hour -= 20
         hour += 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Domingo
-        Horário: ${hour}:00am - Meia-noite
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Domingo" + "<br>" +  "Horário: " + hour + ":00am — Meia-noite"
     
     } else if (select === 'Sábado' && hours >= '21:00') {
     
         hour -= 20
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Domingo
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Domingo" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Sábado' && hours === '00:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Domingo
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Domingo" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Sábado' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sábado
-        Horário: ${hour}:00am
-        `)
-    
+        document.querySelector('#return').innerHTML = "Dia: Sábado" + "<br>" +  "Horário: " + hour + ":00am"
+
     } else if (select === 'Sábado' && hours === '08:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sábado
-        Horário: ${hour}:00pm - Meio-dia
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sábado" + "<br>" +  "Horário: " + hour + ":00pm — Meio-dia"
     
     } else if (select === 'Sábado' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Sábado
-        Horário: ${hour}:00pm
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Sábado" + "<br>" +  "Horário: " + hour + ":00pm"
 
     } else if (select === 'Domingo' && hours === '20:00') {
     
         hour -= 20
         hour += 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Segunda-feira
-        Horário: ${hour}:00am - Meia-noite
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Segunda-feira" + "<br>" +  "Horário: " + hour + ":00am — Meia-noite"
     
     } else if (select === 'Domingo' && hours >= '21:00') {
     
         hour -= 20
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Segunda-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Segunda-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Domingo' && hours === '00:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Segunda-feira
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Segunda-feira" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Domingo' && hours > '00:00' && hours < '08:00') {  
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Domingo
-        Horário: ${hour}:00am
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Domingo" + "<br>" +  "Horário: " + hour + ":00am"
     
     } else if (select === 'Domingo' && hours === '08:00') {
     
         hour += 4
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Domingo
-        Horário: ${hour}:00pm - Meio-dia
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Domingo" + "<br>" +  "Horário: " + hour + ":00pm — Meio-dia"
     
     } else if (select === 'Domingo' && hours > '08:00' && hours < '20:00') {
     
         hour += 4
         hour -= 12
-        alert(`
-        ----[Aura Kingdom]----
-        Dia: Domingo
-        Horário: ${hour}:00pm
-        `)
+        document.querySelector('#return').innerHTML = "Dia: Domingo" + "<br>" +  "Horário: " + hour + ":00pm"
 
     //caso o usuário não escolha nenhum dia, aparecerá esse erro:
     } else if (select === '') {
-        alert('Por favor escolha uma data!')
+        document.querySelector('#return').innerHTML = "Por favor escolha uma data!"
     //caso o usuário não escolha um horário, aparecerá esse erro:
     } else {
-        alert('Por favor escolha um horário!')
+        document.querySelector('#return').innerHTML = "Por favor escolha um horário!"
     }
 })    

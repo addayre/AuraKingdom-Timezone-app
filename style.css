@@ -22,14 +22,14 @@ body {
     color: white;
     text-shadow: 0 0 2px white, 0 0 10px red;
     position: relative;
-    top: 5vh;
+    top: 2vh;
 }
 .main-content {
     display: flex;
     justify-content: center;
     gap: 10px;
     position: relative;
-    top: 12vh;
+    top: 9vh;
     -webkit-app-region: no-drag;
 }
 #select {
@@ -54,7 +54,7 @@ button {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 18vh;
+    top: 13.5vh;
 }
 #button {
     cursor: pointer;
@@ -73,6 +73,25 @@ button {
     color: blue;
     background-color: white;
 }
+.return-value {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 18vh;
+    -webkit-app-region: no-drag;
+}
+.return-value p {
+    padding: 8px 15px;
+    font-family: 'DM Sans', sans-serif;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px white, 0 0 50px lightblue;
+    transition: 0.2s;
+}
+.return-value p:hover {
+    box-shadow: 0 0 35px white, 0 0 100px lightyellow;
+}
 footer h4 {
     display: flex;
     justify-content: center;
@@ -83,8 +102,8 @@ footer h4 {
     color: lightblue;
     font-size: 14px;
     position: relative;
-    top: 26vh;
-    text-shadow: 0.5px 0.5px 1.5vh black;
+    top: 22vh;
+    text-shadow: 0.5px 0.5px 0.5vh black;
 } 
 footer p {
     display: flex;
@@ -94,5 +113,5 @@ footer p {
     color: white;
     font-size: 9px;
     position: relative;
-    top: 33vh;
+    top: 24vh;
 }
